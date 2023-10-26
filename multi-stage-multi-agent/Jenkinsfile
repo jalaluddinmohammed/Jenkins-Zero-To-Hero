@@ -14,7 +14,7 @@ pipeline {
                     docker.image('my-java-app').inside {
                         sh 'ls -l /app'
                         sh 'ls -l /app/HelloWorld.class'
-                        sh 'java HelloWorld'
+                        sh 'java -cp /app HelloWorld'
 
                     }
                 }
