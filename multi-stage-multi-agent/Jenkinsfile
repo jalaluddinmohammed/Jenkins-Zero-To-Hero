@@ -12,7 +12,10 @@ pipeline {
             steps {
                 script {
                     docker.image('my-java-app').inside {
+                        sh 'ls -l /app'
+                        sh 'ls -l /app/HelloWorld.class'
                         sh 'java HelloWorld'
+
                     }
                 }
             }
