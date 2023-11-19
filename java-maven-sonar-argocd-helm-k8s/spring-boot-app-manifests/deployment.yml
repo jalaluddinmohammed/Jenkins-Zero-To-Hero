@@ -1,4 +1,4 @@
-apiVersion: apps/v4
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-boot-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: jalaluddin92/ultimate-cicd:BUILD_NUMBER
+        image: jalaluddin92/ultimate-cicd:replaceImageTag
         ports:
         - containerPort: 8080
