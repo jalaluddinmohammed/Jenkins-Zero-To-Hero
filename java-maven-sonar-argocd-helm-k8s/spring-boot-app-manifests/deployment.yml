@@ -1,4 +1,4 @@
-apiVersion: apps/v14
+apiVersion: apps/v24
 kind: Deployment
 metadata:
   name: spring-boot-app
